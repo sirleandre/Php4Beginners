@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+#main{
+position: relative;
+width: 80%;
+margin:0px auto;
+font-family: 'Raleway', sans-serif;
+margin-left: 90px;
+}
+
+h2{
+background-color: #9B59B6;
+color: white;
+text-align:center;
+border-radius: 10px 10px 0 0;
+margin: -10px -40px;
+padding: 15px;
+}
+
+hr{
+border:0px;
+border-bottom:1px solid #ccc;
+margin: 10px -40px;
+margin-bottom: 30px;
+}
+
+#login{
+width:100%;
+float: right;
+border-radius: 10px;
+font-family:raleway;
+border: 2px solid #ccc;
+padding: 5px 40px 25px;
+
+
+}
+
+input[type=text],input[type=email]{
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding-right: 5px;
+    font-size: 16px;
+    font-family:raleway;
+}
+
+input[type=submit]{
+    position: absolute;
+    background-color:#9B59B6;
+    margin-left: 480px;
+    top: 180px;
+    width: 80px;
+    color: white;
+    right: 160px;
+    font-size:12px;
+    border-radius: 5px;
+    cursor:pointer; 
+    padding-right: 10px;
+    border: 2px solid #9B59B6;
+}
+
+/*-----------------------------------------------------------------
+css settings for right side advertisement
+------------------------------------------------------------------*/
+#formget{
+float:center;
+}
+#name{
+margin-right: 593px;
+}
+#email{
+float:right;
+margin-right: 93px;
+}
+#city{
+margin-left: 340px;
+}
+h1 {
+margin-left: -63px;
+}

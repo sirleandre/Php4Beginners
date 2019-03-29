@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+<title>Game 15 Sum</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="div.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<font color="green"><b>Enter any number from 1-9 result is 15 sum by row,column and right and left diagonal</b>
+
+<form action="sum_15.php" method="post">
+ <table style="width:10%">
+  <tr>
+    <td></td>
+    <th>0</th><!--Sum of 1st Column-->
+    <th>0</th><!--Sum of 2nd Column-->
+    <th>0</th><!--Sum of 3rd Column          Line 1 output-->
+    <td></td>
+  </tr>
+  <tr> 
+    <td></td>
+    <td><input type="text" name="a" required="required" placeholder="Num" size="1"/></td>
+    <td><input type="text" name="b" required="required" placeholder="Num" size="1"/></td>
+    <td><input type="text" name="c" required="required" placeholder="Num" size="1"/></td>
+    <th>0</th><!--Sum of 1st Row                     Line 2-->
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="text" name="d" required="required" placeholder="Num" size="1"/></td>
+    <td><input type="text" name="e" required="required" placeholder="Num" size="1"/></td>
+    <td><input type="text" name="f" required="required" placeholder="Num" size="1"/></td>
+    <th>0</h><!--Sum of 2nd Row                      Line 3-->
+  </tr>
+  <tr>
+    <th>0</th><!--Sum of         First column Right diagonal-->
+    <td><input type="text" name="g" required="required" placeholder="Num" size="1"/></td>
+    <td><input type="text" name="h" required="required" placeholder="Num" size="1"/></td>
+    <td><input type="text" name="i" required="required" placeholder="Num" size="1"/></td>
+    <th>0</th><!--Sum of 3nd Row    Line 4-->
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <th>0</th><!--Sum of    Last Line 5 Left diagonal output-->
+    <th></th>
+  </tr>
+  <tr>
+    <td><input type="submit" name="submit" value="Submit" size="1"/></td>
+    <td></td>
+    <td></td>
+    <th></th><!--Line button for sum and try-->
+    <td><input type="submit" name="try" value="Subtry" size="1"/></td>
+  </tr>
+</table> 
+<video src="" width="300" height="200" controls>
+You browser doesn't support <video> element
+</video>
+</form>
+</body>
+</html>

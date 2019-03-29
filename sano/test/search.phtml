@@ -1,0 +1,28 @@
+<html>
+<head>
+   <title>Search Page</title>
+</head>
+
+<body>
+<H1>Search Page</H1>
+<hr>
+You can search for types of steak here.
+<br><br>
+<? if ($displayHash["HADPROBLEMS"]) {?>
+<b>Sorry, there<?=((sizeof($displayHash["PROBLEMS"]) > 1) "were problems" : "was a problem") ?>with your search!</b>
+<? for ($i=0; $i<=sizeof($displayHash["PROBLEMS"])-1; $i++) {?>
+    <?=$displayHash["PROBLEMS"][$i]?>
+   <?}; ?>
+ <?}; ?>
+<FORM METHOD="POST" ACTION="searchresults.php">
+<TABLE BORDER="0">
+<TR>
+   <TD>Type of Steak</TD>
+   <TD><INPUT TYPE="text" NAME="typeOfSteak"></TD>
+</TR>
+</TABLE><BR>
+<INPUT TYPE="SUBMIT">
+</FORM>
+
+</body>
+</html>

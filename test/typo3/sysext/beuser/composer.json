@@ -1,0 +1,43 @@
+{
+	"name": "typo3/cms-beuser",
+	"type": "typo3-cms-framework",
+	"description": "Backend user administration and overview. Allows you to compare the settings of users and verify their permissions and see who is online.",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0+"],
+	"authors": [{
+			"name": "TYPO3 Core Team",
+			"email": "typo3cms@typo3.org",
+			"role": "Developer"
+		}],
+
+	"require": {
+		"typo3/cms-core": "9.0.0"
+	},
+	"conflict": {
+		"typo3/cms": "*"
+	},
+	"replace": {
+		"beuser": "*"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "9.0.x-dev"
+		},
+		"typo3/cms": {
+			"Package": {
+				"partOfFactoryDefault": true
+			},
+			"extension-key": "beuser"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\Beuser\\": "Classes/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"TYPO3\\CMS\\Beuser\\Tests\\": "Tests/"
+		}
+	}
+}

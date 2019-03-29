@@ -1,0 +1,38 @@
+{
+	"name": "typo3/cms-viewpage",
+	"type": "typo3-cms-framework",
+	"description": "Shows the frontend webpage inside the backend frameset.",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0+"],
+	"authors": [{
+			"name": "TYPO3 Core Team",
+			"email": "typo3cms@typo3.org",
+			"role": "Developer"
+		}],
+
+	"require": {
+		"typo3/cms-core": "9.0.0"
+	},
+	"conflict": {
+		"typo3/cms": "*"
+	},
+	"replace": {
+		"viewpage": "*"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "9.0.x-dev"
+		},
+		"typo3/cms": {
+			"Package": {
+				"partOfFactoryDefault": true
+			},
+			"extension-key": "viewpage"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\Viewpage\\": "Classes/"
+		}
+	}
+}

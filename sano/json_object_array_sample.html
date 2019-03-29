@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Access json object array.</h2>
+
+<p id="testDemo"></p>
+
+<script>
+var textString = '{"students":[' +
+ '{"firstname":"Sanday","lastname":"Sethi" },' +
+ '{"firstname":"Roxy","lastname":"Malik" },' +
+ '{"firstname":"Sunil","lastname":"Antil" }]}';
+
+var obj = JSON.parse(textString);
+document.getElementById("testDemo").innerHTML =
+//obj.students[0].firstname +" "+ obj.students[0].lastname;
+ obj.students[0].lastname +" "+ obj.students[0].firstname;
+
+</script>
+</body>
+</html>

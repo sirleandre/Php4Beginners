@@ -1,0 +1,112 @@
+/* ++Start++  Tag can allow all devices to display on their own screen */                       
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
+
+
+
+/* ++End++  Tag can allow all devices to display on their own screen */ 
+                        
+
+body {
+    background-image:    url(bga.png);
+    background-size:     cover;                     
+    background-repeat:   repeat-x;/*background-repeat: repeat-x; with two color white and blue and no-repeat*/
+    background-position: center; 
+}
+                        .rTable {
+			  	display:inline-block;
+			  	width: 100%;
+			}
+			.rTableHeading, .rTableBody, .rTableFoot, .rTableRow{
+			  	clear: both;
+			}
+			.rTableHead, .rTableFoot{
+			  	background-color: #DDD;
+			  	font-weight: bold;
+			}
+			.rTableCell, .rTableHead {
+			  	border: 1px solid #999999;
+			  	float: left;
+			  	height: 17px;
+			  	overflow: hidden;
+			  	padding: 3px 1.8%;
+			  	width: 10%;/*28 previous size and Can reduce table width to add other columns*/
+			}
+			.rTable:after {
+			  	 visibility: hidden;
+			  	 display: block;
+			  	 font-size: 0;
+			  	 content: " ";
+			  	 clear: both;
+			  	 height: 0;
+			}
+form {
+      width:400px;
+      float: center;
+      border-radius: 10px;
+      font-family:raleway;
+      border: 2px solid #ccc;
+      padding: 10px 40px 25px;
+      margin-top: 50px;
+      margin:20px auto;
+}

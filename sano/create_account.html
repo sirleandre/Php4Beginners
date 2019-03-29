@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Create Account</title>
+<meta name="description" content="Social Network">
+<meta name="author" content="SANGWA Leandre">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="styl.css">
+<link type="text/css" href="sano/logTot/css/jquery" rel="stylesheet" />
+
+<!-- Internet Explorer HTML5 enabling code: -->
+        
+        <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        
+        <style type="text/css">
+        .clear {
+          zoom: 1;
+          display: block;
+        }
+        </style>
+
+        
+        <![endif]-->
+</head>
+<body>
+
+<div id="main">
+<header class="demo-header">
+<hgroup>
+</hgroup>
+</header>
+
+<div class="demo-nav">
+<!-- <a href="lesson7.html" class="demo-lesson-nav-prev">&larr; Previous Lesson</a> -->
+</div> <!-- end demo-nav -->
+
+<div class="demo-container">
+<form action="create_account.php" method="POST" id="form-new-account" novalidate>
+<fieldset>
+<legend>Create Account</legend>
+<p>
+<label for="name">First Name:</label><br />
+<input type="text" name="fname" id="fname" maxlength="25" class="validate-locally" required="required" placeholder="First name"/>
+</p>
+
+<p>
+<label for="name">Last Name:</label><br />
+<input type="text" name="lname" id="lname" maxlength="25" class="validate-locally" required="required" placeholder="Last name"/>
+</p>
+
+<p>
+<label for="userphone">Phone:</label><br />
+<input type="tel" name="phone" id="phone" maxlength="15" class="validate-locally" required="required" placeholder="+250 788550874"/>
+<span class="demo-errors"></span>
+</p>
+
+<p>
+<label for="email">Email Address:</label><br />
+<input type="email" name="email" id="email" class="validate-locally" required="required" placeholder="ruganzu.bwimba@sano.rw"/>
+<span class="demo-errors"></span>
+</p>
+<!--
+<p>
+<label for="usernation">Nationality:</label><br />
+<input type="text" name="nation" id="nation" maxlength="15" class="validate-locally" required="required" placeholder="Rwandan"/>
+<span class="demo-errors"></span>
+</p>
+-->
+<p>
+<label for="userbd">Birthdate:</label><br />
+<input type="text" name="bd" id="birthdate" maxlength="15" class="validate-locally" required="required" placeholder="01/01/1950"/>
+<span class="demo-errors"></span>
+</p>
+
+<p>
+<label for="username">Gender:</label><br />
+<select name="gender" id="gender">
+<option value="0">- Select Gender -</option>
+<option value="1">Male</option>
+<option value="2">Female</option>
+</select>
+<span class="demo-errors"></span>
+</p>
+<!--
+<p>
+<label for="name">Father Names:</label><br />
+<input type="text" name="fnames" id="fname" maxlength="25" class="validate-locally" required="required" placeholder="First and last names"/>
+</p>
+<p>
+<label for="name">Mother Names:</label><br />
+<input type="text" name="mnames" id="mname" maxlength="25" class="validate-locally" required="required" placeholder="First and last names"/>
+</p>
+<p>
+<label for="name">Grand-Father Names:</label><br />
+<input type="text" name="gffnames" id="gffname" maxlength="25" class="validate-locally"required="required" placeholder="First names" />
+</p>
+<label for="name">G-Grand-Father Names:</label><br />
+<input type="text" name="ggffnames" id="ggffname" maxlength="25" class="validate-locally"required="required" placeholder="First names" />
+</p>
+
+-->
+<p>
+<label for="password">Password:</label><br />
+<input type="password" name="password" id="password" class="validate-locally" required="required" placeholder="********" />
+<span class="demo-input-info">Must be 8 characters minimum, alphanumeric</span>
+<span class="demo-errors"></span>
+</p>
+
+<p>
+<label for="confirm-password">Confirm Password:</label><br />
+<input type="password" name="confirm-password" id="confirm-password" class="validate-locally" required="required" placeholder="********"/>
+<span class="demo-errors"></span>
+</p>
+
+
+<p>
+<input type="submit" value="Create Account" name="submit" />
+</p>
+
+</fieldset>
+</form>
+
+</div> <!-- end demo-container -->
+<div id="formget">
+<a href="create_account.php"><img src="formget.jpg" alt="Click here to get Form again"></a>
+</div>
+</div> <!-- end main div -->
+<!--
+<footer class="demo-footer">
+<a href="file.html" class="form-nav-next">Next Form &rarr;</a>
+</footer>
+-->
+<script src="http://ajax.googleap...n.js"></script>
+<script src="scripts/create_account/validate.js"></script>
+
+<script src="scripts/jquery-1.6.2.min.js"></script>
+<script src="scripts/birthdate.js"></script>
+<script src="jquery-ui-1.8.16.custom/js/jquery-ui-1.8.16.custom.min.js"></script>
+
+</body>
+</html>
+

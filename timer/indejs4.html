@@ -1,0 +1,94 @@
+<html>
+<head>
+<script type="text/javascript">
+     function people(name, age) {//Two parameters are: name and age
+         this.name = name;
+         this.age = age;
+         this.yearsUntilRetire = yearsLeft;//Method is yearsLeft
+     }
+
+     function yearsLeft () {
+         var numYears = 65 - this.age;
+         return numYears;
+     }
+
+     var nat = new people("Natalie Musisi",22);
+     var tit = new people("Neru Tito",42);
+</script>
+</head>
+<body>
+<script type="text/javascript">
+     document.write(nat.yearsUntilRetire());
+     document.write("<br>");
+     document.write(tit.yearsUntilRetire());
+
+document.write("<br />");
+document.write("<br />");
+
+     function fireball(x) {//x is parameter
+        alert(" I love " + x);
+     }
+   fireball("bacon");
+   fireball("Ring long");
+   fireball("ibirari by'insigamigani");
+
+     function imbuto(one, two) {
+          document.write(one + "  is better than " + two + "<br />");
+     }
+    imbuto("Denyse", "Jolie");
+    imbuto("Kaunga", "Igitoki");   
+    imbuto("Algo.", "Math.");
+
+document.write("<br />");
+document.write("<br />");
+
+          function addNumbers(a,b) {
+              var sum= a+b;
+              return sum;//the return statements
+          }
+        document.write(addNumbers(13,7)); 
+document.write("<br />");
+document.write("<br />");
+
+          function korambere() {
+                 document.write("Ndi uwambere !!");
+          } 
+          function koranyuma() {
+                 document.write("50.000Dollars");
+          }  
+
+
+          function tangira() {
+                 korambere();
+                 koranyuma();
+          } 
+   
+          tangira();//Calling function fro another function
+document.write("<br />");
+document.write("<br />");
+
+          function dofirst() {
+               document.write(" First ");
+               dosecond();
+          }
+          function dosecond() {
+               document.write(" Second ");
+               dofirst();
+          }
+
+          //dofirst();Calling function fro another function
+document.write("<br />");
+document.write("<br />");
+
+     var girl = " Mummy ";//Global variable declared out of fxn and used every where in the program
+          function splits() {
+                var girl = " Mummy ";//Local variable
+                document.write(girl);
+          }
+
+          splits();
+          document.write(girl);
+</script>
+
+</body>
+</html>

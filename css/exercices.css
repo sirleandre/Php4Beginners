@@ -1,0 +1,45 @@
+.background /*Class's declaration*/
+{
+ color:purple;
+ font-size:1em;
+ font-family:Arial;
+ background-color: gray;
+ 
+}
+
+#speech1  /*Id's declaration*/
+{
+ color:aqua;
+ text-decoration: line-through;
+ text-align: center;
+ 
+}
+
+b
+{
+ border:3px black solid;
+ text-shadow: 3px 10px 20px green; 
+}
+
+a
+{
+ color:red;font-style:italic;text-decoration:none;
+}
+
+a:hover
+{
+ background-color:gray;color:white;
+}
+
+a:focus
+{
+ background-color:orange;
+}
+
+a:visited
+{
+ color:pink;
+}
+
+
+<labelfor="autre">Un <input type="search" name="autre" id="autre"/>

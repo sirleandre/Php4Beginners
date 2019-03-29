@@ -1,0 +1,20 @@
+form {
+       margin-left: 400px;
+       text-align: center;
+       
+ }
+#firstName {
+     margin-left: 65px;
+}
+#lastName {
+     margin-left: 68px;
+}
+#submitButton {
+        padding: 2px;
+}
+#resetButton {
+      padding: 2px;
+}
+#date {
+  margin-right: 170px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Trigo game</title>
+         <link rel="stylesheet" href="fiften.css">
+<!-- Biginning of js-->
+ <script type="text/javascript"> 
+
+//start Main Function
+function findTotal1(){
+    var arr = document.getElementsByName('sc1');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    document.getElementById('total').value = tot;
+}
+
+    var r, c=0, a[10][10], b[100][100], sum[100][100], i, j;
+
+   
+     for(var c=0;c<3;++c) {
+    //printf("\n#Enter numbers from 1 - 9 without repetition. for columns,rows and diagonals 15#\n\n");
+
+    for(var i=0; i<3; ++i)
+        for(var j=0; j<3; ++j)
+        {
+            //printf("Enter element a%d%d: ",i+1,j+1);
+            //scanf("%d",&a[i][j]);
+        }
+
+   // printf("Enter elements of 2nd matrix:\n");
+    //for(i=0; i<r; ++i)
+       // for(j=0; j<c; ++j)
+       // {
+           // printf("Enter element a%d%d: ",i+1, j+1);
+          //  scanf("%d", &b[i][j]);
+       // }
+
+    // Adding Two matrices
+
+    for(var i=0;i<3;++i)
+        for(var j=0;j<3;++j)
+        {
+           var sum[i][j]= var a[i][j];//+b[i][j];
+           //sum[i][j]=a[0][0]+b[1][0]+z[2][0];
+        }
+
+    // Displaying the result
+    //printf("\nList of three Lines and Columns are: \n\n");
+
+    for(var i=0;i<3;++i)
+        for(var j=0;j<3;++j)
+        {
+
+            //printf("%d   ",sum[i][j]);
+
+
+            if(var j==3-1)
+            {
+               //printf("\n\n");
+            }
+        }
+        //Displaying sum of 3 lines and 3 columns
+        //printf("\nSum of 3 Lines and 3 Columns: \n\n");
+        //for(i=0;i<3;++i)
+        //for(j=0;j<3;++j)
+
+        {
+
+        if ((a[0][0]+a[0][1]+a[0][2]==15) &&
+        (a[1][0]+a[1][1]+a[1][2]==15) &&
+        (a[2][0]+a[2][1]+a[2][2]==15) &&
+        (a[0][0]+a[1][0]+a[2][0]==15) &&
+        (a[0][1]+a[1][1]+a[2][1]==15) &&
+        (a[0][2]+a[1][2]+a[2][2]==15) &&
+        (a[2][0]+a[1][1]+a[0][2]==15) &&
+        (a[2][2]+a[1][1]+a[0][0]==15)){
+           var a[0][0]+a[0][1]+a[0][2]);//Line 1
+           var a[1][0]+a[1][1]+a[1][2]);//Line 2
+           var a[2][0]+a[2][1]+a[2][2]);//Line 3
+           var a[0][0]+a[1][0]+a[2][0]);//Column 1
+           var a[0][1]+a[1][1]+a[2][1]);//Column 2
+           var a[0][2]+a[1][2]+a[2][2]);//Column 3
+           var a[2][0]+a[1][1]+a[0][2]);//Diagonal bottom left to top
+           var a[2][2]+a[1][1]+a[0][0]);//Diagonal bottom right to top
+        
+          break;
+          }
+
+           else {
+           printf("TRY AGAIN");
+           //exit(0);
+           }
+           //if(j==3-1)
+            //{
+               //printf("\n\n");
+           // }
+        }
+     }//for 3 times
+    return 0;
+    exit(0);
+}
+
+   </script>
+<!-- End of js--> 
+</head>
+
+<body onLoad="loaded()">
+
+<!-- table numbers form--> 
+         
+      sc1 : <input type="text" name="total"  size="1" id="total"/>
+      sc2 : <input type="text" name="total2" size="1" id="total2"/>
+      sc3 : <input type="text" name="total3" size="1" id="total3"/>
+      sr1 : <input type="text" name="total4" size="1" id="total4"/>
+      sr2 : <input type="text" name="total5" size="1" id="total5"/>
+      sr3 : <input type="text" name="total6" size="1" id="total6"/>
+      sld7 : <input onblur="findTotal()" type="text" name="qty" size ="1" id="sld7"/>
+      srd8 : <input onblur="findTotal()" type="text" name="qty" size ="1" id="srd8"/>
+      
+<!-- end table numbers form--> 
+  <div class="container">
+  <div class="heading">
+    <h1 class="title">15</h1>
+    <div class="score-container">0</div>
+  </div>
+  <p class="game-intro">Sum of three caros lows and columns is equal <strong>15!</strong></p>
+<a href="#" target="_blank">New game</a>   
+<a class="restart-button"></a>
+  <div class="game-container">
+    <div class="game-message">
+      <p></p>
+      <div class="lower">
+        <a class="retry-button">Try again</a>
+      </div>
+    </div>
+
+    <div class="grid-container"><!--in bolder table -->
+      <div class="grid-row">
+        <div class="grid-cell"><input onblur="findTotal1()" type="text" name="sc1" size ="1" id="n1"/></div>
+        <div class="grid-cell"><input onblur="findTotal2()" type="text" name="sc2" size ="1" id="n2"/></div>
+        <div class="grid-cell"><input onblur="findTotal3()" type="text" name="sc3" size ="1" id="n3"/></div>
+        <!--Line1 and Column4-->
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell"><input onblur="findTotal1()" type="text" name="sc1" size ="1" id="n4"/></div>
+        <div class="grid-cell"><input onblur="findTotal2()" type="text" name="sc2" size ="1" id="n5"/></div>
+        <div class="grid-cell"><input onblur="findTotal3()" type="text" name="sc3" size ="1" id="n6"/></div>
+        <!-- Line2 and Column4-->
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell"><input onblur="findTotal1()" type="text" name="sc1" size ="1" id="n7"/></div>
+        <div class="grid-cell"><input onblur="findTotal2()" type="text" name="sc2" size ="1" id="n8"/></div>
+        <div class="grid-cell"><input onblur="findTotal3()" type="text" name="sc3" size ="1" id="n9"/></div>
+        <!--Line3 and Column4-->
+      </div>
+      <div class="grid-row">
+        <!--Line4 and Column3-->
+        <!--Line4 and Column1-->
+        <!--Line4 and Column2-->
+        <!-- Line4 and Column4-->
+      </div>
+    </div>
+
+    <div class="tile-container">
+
+    </div>
+  </div>
+
+  <p class="game-explanation">
+    <strong class="important">How to play:</strong>Use<strong>  Numbers from 1-9</strong> of keyboard. Where rows,columns and diagonals equal to <strong>15!</strong>
+  </p>
+  <hr>
+  <p>
+  Created by <a href="#" target="_blank">Mozal.</a> Based on <a href="#" target="_blank">kale</a> and conceptually <a href="#" target="_blank"></a>
+  </p>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.6/hammer.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

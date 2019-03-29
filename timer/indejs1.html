@@ -1,0 +1,119 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+var duna = 5 * 3;
+document.write(duna);
+document.write("<br>");
+
+var tuna = "Munigankiko said,\"I am here \" ";
+document.write(tuna);
+document.write("<br>");
+
+var na = 90;
+na++;
+document.write(na);
+document.write("<br>");
+
+var a = 5;
+a +=55;
+document.write(a);
+document.write("<br>");
+
+var num1 = 3;
+var num2 = 7;
+
+if(num1 != num2) {
+   document.write("IT IS TRUE");
+}
+document.write("<br>");
+
+if (2 != 2) {
+    document.write("Yes Iam ");
+} else {
+    document.write("Yes I am not");
+}
+document.write("<br>");
+
+var fname = "Rukangabayombe";
+var lname = "Ndabateze";
+
+   if (fname == "Rukangabayombe") {
+        if (lname == "Ndabateze") {
+              document.write("Welcome Rukangabayombe wacu!!!!");
+         }else{
+               document.write("Welcome Rukangabayombe wundi!!!");
+         }
+   }
+document.write("<br>");
+
+var fnum = "stella";
+var lnum = "olga";
+ 
+    if ( (fnum=="stella") && (lnum=="olga") ) {
+        document.write("Hey good job");
+
+     }
+document.write("<br>");
+
+var fnum = "simba";
+var lnum = "olga";
+ 
+    if ( (fnum=="stella") || (lnum=="olga") ) {
+        document.write("Hey Perhaps");
+
+     }
+document.write("<br>");
+ 
+var grl = "umulisa";
+
+  switch(grl) {
+      case "Umulisa":
+            document.write("You must like garden state");
+            break;
+       case "laila":
+            document.write("Ooo fan of twilght ey?");
+            break;
+       default:
+            document.write("This is default msg");
+  }
+ 
+document.write("<br>");
+document.write("<br>");
+for (x=0; x<10; x+=3) {
+      document.write("I love Rebecca <br />");
+}
+ 
+document.write("<br>");
+
+var t = 1;
+
+  while(t<10) {
+       document.write(t  +" how you like them? <br />");
+       t++;
+  }
+document.write("<br>");
+document.write("<br>");
+var s = 35;
+
+ do{
+     document.write(s+ "  alo! <br />");
+      s++;
+   }while(s<=20);
+document.write("<br>");
+document.write("<br>");
+var kati = "I am black cat!";
+document.write(kati.length);//length is propert of kati variable. Object has Propert:name,age,size,height,weight,color.. and Method: i do...
+</script>
+
+<form>
+     <input type="button" value="touch me" onClick="alert('ahh!');alert('Two times!');"/>
+</form>
+
+<a href="http://sano.com" onMouseOver="alert('Gametime!');">Hover over me!</a> <br>
+<a href="http://sano.com" onMouseOut="alert('Hey comeback!!');">Out of me!</a>
+
+</body>
+</html>

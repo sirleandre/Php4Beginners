@@ -1,0 +1,49 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+#main{
+width:400px;
+margin:20px auto;
+font-family: 'Raleway', sans-serif;
+}
+
+legend{
+color: #9B59B6;
+text-align:center;
+margin: -10px -10px;
+padding: 15px;
+}
+
+
+h2{
+background-color: #9B59B6;
+color: white;
+text-align:center;
+border-radius: 10px 10px 0 0;
+margin: -10px -40px;
+padding: 15px;
+}
+
+hr{
+border:0;
+border-bottom:1px solid #ccc;
+margin: 10px -40px;
+margin-bottom: 30px;
+}
+
+
+
+
+/*-----------------------------------------------------------------
+css settings for right side advertisement
+------------------------------------------------------------------*/
+#forget{
+float:center;
+}
+#create{
+float:right;
+padding-right: 20px;
+}
+h1 {
+margin-left: -63px;
+}
